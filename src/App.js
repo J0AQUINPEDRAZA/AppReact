@@ -1,13 +1,16 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import dataHogar from './libs/DataHogar';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <ItemListContainer />
       </header>
+      <main className='App-Main'>
+        <ItemListContainer items={dataHogar}/>
+      </main>
     </div>
   );
 }

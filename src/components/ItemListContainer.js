@@ -1,12 +1,20 @@
+import { useState } from "react"
+import ItemConunt from "./ItemCount";
+import ItemProduct from "./ItemProduct"
 
-function ItemListContainer() {
+function ItemListContainer(props) {
+    
     return (
+        <>
+        { 
+        props.items.map(item => (
         <div className="itemContainer">
-            <div className="itemCard">
-            <img src='' className="itemImg" />
-            <p>Descipcion del item</p>
-            </div>
-        </div>
+            <ItemProduct title={item.tag} image={item.image} price={item.price} />
+            <ItemConunt stock={item.stock} initial={1} />
+        </div> 
+        ))
+       }
+        </> 
     )
 }
 export default ItemListContainer;

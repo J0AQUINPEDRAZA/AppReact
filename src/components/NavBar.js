@@ -1,4 +1,4 @@
-import logo from './logo192.png'
+import logo from '../img/logo/logo192.png'
 import CartWidget from './CartWidget';
 function NavBar() {
   return (

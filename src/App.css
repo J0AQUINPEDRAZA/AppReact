@@ -8,16 +8,36 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
 }
 
+.App-Main{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  top: 80px;
+  background-color: #bdd4f1;
+  ;
+  height: 100%;
+  min-height: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+
 .nav {
+  background-color: #10203f;
+  z-index: 50;
+  position: fixed;
   width: 100%;
   padding: 10px 0px;
   display: flex;
@@ -25,7 +45,6 @@
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  border-bottom: 1px solid #fff;
 }
 
 .btnsCategoriasContainer {
@@ -67,6 +86,183 @@
   font-size: 15px;
   border: 1px solid #00ff2a;
   border-radius: 50%;
-  width: 18px;
+  width: 20px;
   height: 18px;
+  padding-bottom: 2px;
+}
+
+.itemCountContainer {
+  height: 90px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.countBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btnMinus {
+  color: #10203f;
+  background-color: transparent;
+  border: none;
+  outline-style: none;
+  border: 2px solid #10203f;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-minus {
+  width: 13px;
+  height: 11.7px;
+}
+
+.btnMinus:hover {
+  border: 2px solid #ff0000;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.btnMinus:active {
+  border: 2px solid #8e1818;
+  color: #8e1818;
+}
+.btnMinus:disabled {
+  border: 2px solid #8e1818;
+  color: #8e1818;
+  cursor: default;
+}
+
+.btnPlus {
+  color: #10203f;
+  background-color: transparent;
+  border: none;
+  outline-style: none;
+  border: 2px solid #10203f;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fa-plus {
+  width: 13px;
+  height: 11.7px;
+}
+
+.btnPlus:hover {
+  border: 2px solid #00ff2a;
+  color: #00ff2a;
+}
+
+.btnPlus:active {
+  border: 2px solid #026813;
+  color: #026813;
+}
+.btnPlus:disabled {
+  border: 2px solid #026813;
+  color: #026813;
+  cursor: default;
+}
+
+
+
+.countNumber {
+  color: #10203f;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  outline: none;
+  border: 1px solid #10203f;
+  border-radius: 5px;
+}
+
+.btnAddToCart {
+  width: 120px;
+  height: 30px;
+  padding: 3px 6px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  color: #80aded;
+  border: 1px solid #80aded;
+}
+
+.btnAddToCart:hover{
+  color: #93b9ed;
+  border: 1px solid #93b9ed;
+}
+
+.btnAddToCart:active{
+  color: #1d4173;
+  border: 1px solid #1d4173;
+}
+.btnAddToCart:disabled{
+  color: #1d4173;
+  border: 1px solid #1d4173;
+  cursor: default;
+}
+
+.stockText{
+  color: #10203f;
+  font-size: 12px;
+}
+
+.itemContainer{
+  width: 100%;
+    max-width: 300px;
+    min-width: 235px;
+    height: 340px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 1px #436ba2;
+}
+.itemContainer:hover{
+  box-shadow: 0px 20px 35px 0px #2f568d;
+	z-index: 1;
+	transition: .2s ease-in-out;
+}
+
+.itemImg{
+  width: 180px;
+}
+.itemTitle{
+  color: #fff;
+}
+.itemPrice{
+  color: #fff;
+}
+.itemCard{
+  display: flex;
+  min-height: 220px;
+  max-height: 220px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
 }
