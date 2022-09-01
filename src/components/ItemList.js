@@ -3,14 +3,14 @@ import ItemConunt from "./ItemCount";
 import Item from "./Item";
 import { useState } from "react";
 import dataHogar from "../libs/DataHogar";
-import task from '../utils/task';
+import Task from '../utils/Task';
 
 
 function ItemList() {
     const [products, setProducts] = useState([]);
     useEffect(() => {
 
-        task(dataHogar)
+        Task(dataHogar)
             .then(res => setProducts(res))
             .catch(err => console.log(err))
 

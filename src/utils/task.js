@@ -1,6 +1,6 @@
 let run = true;
 
-let task = (consult) => {
+let Task = (consult) => {
     return new Promise((resolve, reject) => {
         if (run) {
             setTimeout(() => {
@@ -11,4 +11,4 @@ let task = (consult) => {
         }
     })
 }
-export default task
+export default Task
