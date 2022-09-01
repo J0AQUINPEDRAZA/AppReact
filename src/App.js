@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import dataHogar from './libs/DataHogar';
+
 function App() {
   return (
     <div className="App">
@@ -9,7 +9,7 @@ function App() {
         <NavBar />
       </header>
       <main className='App-Main'>
-        <ItemListContainer items={dataHogar}/>
+        <ItemListContainer />
       </main>
     </div>
   );

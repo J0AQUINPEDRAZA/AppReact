@@ -110,11 +110,11 @@
 }
 
 .btnMinus {
-  color: #10203f;
+  color: #1d4173;
   background-color: transparent;
   border: none;
   outline-style: none;
-  border: 2px solid #10203f;
+  border: 2px solid #1d4173;
   border-radius: 50%;
   width: 22px;
   height: 22px;
@@ -145,11 +145,11 @@
 }
 
 .btnPlus {
-  color: #10203f;
+  color: #1d4173;
   background-color: transparent;
   border: none;
   outline-style: none;
-  border: 2px solid #10203f;
+  border: 2px solid #1d4173;
   border-radius: 50%;
   width: 22px;
   height: 22px;
@@ -190,7 +190,7 @@
   width: 50px;
   height: 25px;
   outline: none;
-  border: 1px solid #10203f;
+  border: 1px solid #1d4173;
   border-radius: 5px;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .stockText{
-  color: #10203f;
+  color: #1d4173;
   font-size: 12px;
 }
 
@@ -253,10 +253,10 @@
   width: 180px;
 }
 .itemTitle{
-  color: #fff;
+  color: #1d4173;
 }
 .itemPrice{
-  color: #fff;
+  color: #1d4173;
 }
 .itemCard{
   display: flex;
