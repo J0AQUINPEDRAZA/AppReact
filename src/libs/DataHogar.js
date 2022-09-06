@@ -1,21 +1,23 @@
 
-const dataHogar=[
+const DataHogar=[
     {
       id: 1,
       tag:"Campera1",
       image: "https://i.ibb.co/tZLrqQJ/campera1.jpg",
       price:21000,
       category:"Hogar",
-      stock: 5
+      stock: 5,
+      desciption:"Campera puffer negra de abrrigo, rompe viento, impermeable."
       
   },
   {
     id: 2,
-    tag:"Remera1",
+    tag:"Remera adidas blanca",
     image: "https://i.ibb.co/rvjfpyz/remera1.jpg",
     price:4000,
     category:"Hogar",
-    stock: 7
+    stock: 7,
+    desciption:"Remera adidas blanca basica original, slimfit, talles: s, xs, xl, xxl, xxxl."
     
 },
 {
@@ -55,4 +57,4 @@ const dataHogar=[
   
 },
 ]
-export default dataHogar;
+export default DataHogar;
