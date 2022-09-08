@@ -7,7 +7,7 @@ const Task = (consult) => {
                 resolve(consult)
             }, 2000);
         } else {
-            reject("error!!")
+            reject("error!")
         }
     })
 }
