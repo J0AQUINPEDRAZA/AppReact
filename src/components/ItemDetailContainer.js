@@ -3,18 +3,20 @@ import Task from "../utils/Task";
 import React, { useEffect } from 'react';
 import { useState } from "react";
 import DataHogar from "../libs/DataHogar";
-const ItemDetailContainer = () =>{
-    const [product, setProduct] = useState([]);
+import { useParams } from "react-router-dom";
+const ItemDetailContainer = () => {
+    const [product, setProduct] = useState({});
+    const { id } = useParams();
     useEffect(() => {
-
-        Task(DataHogar[1])
+        Task(DataHogar.find(item => item.id === parseInt(id)))
             .then(res => setProduct(res))
             .catch(err => console.log(err))
 
-    }, [])
+    }, [id])
     return (
-        <>{
-        <ItemDetail item={product} />
+        <>{<main className='App-Main'>
+            <ItemDetail item={product} />
+        </main>
         }</>
     )
 }

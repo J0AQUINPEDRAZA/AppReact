@@ -1,27 +1,17 @@
-import React, { useEffect } from 'react';
-import ItemConunt from "./ItemCount";
+
 import Item from "./Item";
-import { useState } from "react";
-import DataHogar from "../libs/DataHogar";
-import Task from '../utils/Task';
+import { Link } from "react-router-dom";
 
 
-function ItemList() {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-
-        Task(DataHogar)
-            .then(res => setProducts(res))
-            .catch(err => console.log(err))
-
-    }, [])
+function ItemList({item}) {
     return (
-        <>{
-            products.map(item =>
-                <div className="itemContainer" key={item.id}>
-                    <Item title={item.tag} image={item.image} price={item.price} />
-                    <ItemConunt stock={item.stock} initial={1} />
-                </div>)
+        <>{ item.length > 0
+            ? item.map(item=>
+            <div className="itemContainer" key={item.id} >
+                <Item item={item} />
+                <Link to={`item/${item.id}`} className="btnDetalle"><p>Detalle</p></Link>
+            </div>)
+            : <p>cargando...</p> 
         }</>
     )
 

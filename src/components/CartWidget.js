@@ -2,7 +2,7 @@
 function CartWidget() {
     return (
         <div className="cartContainer">
-            <a href='#'><i className="iconoCarrito fa-solid fa-cart-shopping"></i></a>
+            <i className="iconoCarrito fa-solid fa-cart-shopping"></i>
             <p className="numberCart">0</p>
         </div>
     )

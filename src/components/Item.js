@@ -1,9 +1,10 @@
-function Item({ image, title, price, }) {
+function Item({ item }) {
     return (
-        <div className="itemCard">
-            <img src={image} className="itemImg" />
-            <p className="itemTitle">{title}</p>
-            <p className="itemPrice">${price}</p>
+        <div className="itemCard" key={item.id}>
+            <img src={item.image} className="itemImg" alt=""/>
+            <p className="itemTitle">{item.tag}</p>
+            <p className="itemPrice">${item.price}</p>
+            <span className="stockText">{item.stock > 0 ? `Quedan ${item.stock} unidades en stock` : `No quedan unidades en stock`}</span>
         </div>
     )
 }

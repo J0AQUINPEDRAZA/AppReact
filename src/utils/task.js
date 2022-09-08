@@ -1,6 +1,6 @@
 let run = true;
 
-let Task = (consult) => {
+const Task = (consult) => {
     return new Promise((resolve, reject) => {
         if (run) {
             setTimeout(() => {
