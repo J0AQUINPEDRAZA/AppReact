@@ -5,7 +5,7 @@ const Task = (consult) => {
         if (run) {
             setTimeout(() => {
                 resolve(consult)
-            }, 1000);
+            }, 2000);
         } else {
             reject("error!!")
         }
