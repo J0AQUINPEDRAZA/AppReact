@@ -28,8 +28,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-content: flex-start;
+  flex-direction: column;
+  align-content: center;
 }
 
 
@@ -222,6 +222,7 @@
 }
 
 .btnAddToCart {
+  text-decoration: none;
   width: 120px;
   height: 30px;
   padding: 3px 6px;
@@ -363,7 +364,8 @@
 
 .sectionMain {
   display: flex;
-  width: 1350px;
+  width: 100%;
+  max-width: 1350px;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -387,4 +389,45 @@
   box-shadow: 0px 20px 35px 0px #2f568d;
   z-index: 1;
   transition: .2s ease-in-out;
+}
+
+.categoryName{
+    font-size: 25px;
+    color: #10203f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    text-shadow: 1px 1px 5px #1d4173;
+  }
+  
+.btnCartWidget{
+  text-decoration: none;
+}
+
+.btnGoToCart {
+  text-decoration: none;
+  width: 120px;
+  height: 30px;
+  padding: 3px 6px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  color: #80aded;
+  border: 1px solid #80aded;
+}
+
+.btnGoToCart:hover {
+  color: #93b9ed;
+  border: 1px solid #93b9ed;
+}
+
+.btnGoToCart:active {
+  color: #1d4173;
+  border: 1px solid #1d4173;
+}
+
+.btnGoToCart:disabled {
+  color: #1d4173;
+  border: 1px solid #1d4173;
+  cursor: default;
 }

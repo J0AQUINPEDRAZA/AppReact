@@ -3,7 +3,8 @@ import Item from "./Item";
 import { Link } from "react-router-dom";
 
 
-function ItemList({item}) {
+function ItemList({ item }) {
+    
     return (
         <>{ item.length > 0
             ? item.map(item=>

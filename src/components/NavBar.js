@@ -11,7 +11,7 @@ function NavBar() {
           <Link to={'/category/2'} className='btnCategorias'><p>Hogar</p></Link>
           <Link to={'/category/1'} className='btnCategorias'><p>Moda</p></Link>
         </div>
-        <CartWidget />
+        <Link to='/cart' className='btnCartWidget'><CartWidget /></Link>
       </nav>
     </header>
   );

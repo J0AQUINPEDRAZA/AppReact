@@ -7,7 +7,8 @@ const DataHogar=[
       price:21000,
       categoryId:1,
       stock: 5,
-      desciption:"Campera puffer negra de abrrigo, rompe viento, impermeable."
+      desciption:"Campera puffer negra de abrrigo, rompe viento, impermeable.",
+      categoryName: "Moda"
       
   },
   {
@@ -16,8 +17,9 @@ const DataHogar=[
     image: "https://i.ibb.co/rvjfpyz/remera1.jpg",
     price:4000,
     categoryId:1,
-    stock: 7,
-    desciption:"Remera adidas blanca basica original, slimfit, talles: s, xs, xl, xxl, xxxl."
+    stock: 0,
+    desciption:"Remera adidas blanca basica original, slimfit, talles: s, xs, xl, xxl, xxxl.",
+    categoryName: "Moda"
     
 },
 {
@@ -27,7 +29,8 @@ const DataHogar=[
   price:23000,
   categoryId:1,
   stock: 4,
-  desciption:"Zapatillas adidas originales, deportivas, runing y mas."
+  desciption:"Zapatillas adidas originales, deportivas, runing y mas.",
+  categoryName: "Moda"
   
 },
 {
@@ -37,7 +40,8 @@ const DataHogar=[
   price:8000,
   categoryId:1,
   stock: 6,
-  desciption:"Riñonera Everlast, neoprene, resistente al agua, hurbana, regulable."
+  desciption:"Riñonera Everlast, neoprene, resistente al agua, hurbana, regulable.",
+  categoryName: "Moda"
   
 },
 {
@@ -47,7 +51,8 @@ const DataHogar=[
   price:5000,
   categoryId:1,
   stock: 8,
-  desciption:"Remera casual de los simspsons, unisex todos los talles."
+  desciption:"Remera casual de los simspsons, unisex todos los talles.",
+  categoryName: "Moda"
   
 },
 {
@@ -57,7 +62,8 @@ const DataHogar=[
   price:18000,
   categoryId:1,
   stock: 5,
-  desciption:"Zapatilla New balance, deportiva - casual, suela de goma amortiguante."
+  desciption:"Zapatilla New balance, deportiva - casual, suela de goma amortiguante.",
+  categoryName: "Moda"
   
 },
 {
@@ -67,7 +73,8 @@ const DataHogar=[
   price:18000,
   categoryId:2,
   stock: 5,
-  desciption:"Set matero Stanley, completo, con todos sus accesorios, mate, yerbera, termo, y porta set."
+  desciption:"Set matero Stanley, completo, con todos sus accesorios, mate, yerbera, termo, y porta set.",
+  categoryName: "Hogar"
   
 },
 {
@@ -77,7 +84,8 @@ const DataHogar=[
   price:18000,
   categoryId:2,
   stock: 5,
-  desciption:"Mesa ratona nordica, doble material, madera y vidrio, liviana y super contemporanea."
+  desciption:"Mesa ratona nordica, doble material, madera y vidrio, liviana y super contemporanea.",
+  categoryName: "Hogar"
   
 },
 {
@@ -87,7 +95,8 @@ const DataHogar=[
   price:18000,
   categoryId:2,
   stock: 5,
-  desciption:"Pava electrica Peabody, negra, 1.5lts, modo mate!."
+  desciption:"Pava electrica Peabody, negra, 1.5lts, modo mate!.",
+  categoryName: "Hogar"
   
 },
 {
@@ -97,7 +106,8 @@ const DataHogar=[
   price:18000,
   categoryId:2,
   stock: 5,
-  desciption:"Silla nordica para elhogar, cocina, escritorio, asiento simil cuero."
+  desciption:"Silla nordica para elhogar, cocina, escritorio, asiento simil cuero.",
+  categoryName: "Hogar"
   
 },
 {
@@ -107,7 +117,8 @@ const DataHogar=[
   price:18000,
   categoryId:2,
   stock: 5,
-  desciption:"Silla nordica de oficina, comoda, hergonomica, asiento de pana."
+  desciption:"Silla nordica de oficina, comoda, hergonomica, asiento de pana.",
+  categoryName: "Hogar"
   
 },
 {
@@ -117,7 +128,8 @@ const DataHogar=[
   price:18000,
   categoryId:2,
   stock: 5,
-  desciption:"Tostadora atma, doble, 180w, 220v, color silver, con timer."
+  desciption:"Tostadora atma, doble, 180w, 220v, color silver, con timer.",
+  categoryName: "Hogar"
   
 },
 {
@@ -127,7 +139,8 @@ const DataHogar=[
   price:18000,
   categoryId:3,
   stock: 5,
-  desciption:"Celular samsung, 6gb de ram, 128gb de almacenamiento, varios colores disponibles."
+  desciption:"Celular samsung, 6gb de ram, 128gb de almacenamiento, varios colores disponibles.",
+  categoryName: "Tecnologia"
   
 },
 {
@@ -137,7 +150,8 @@ const DataHogar=[
   price:18000,
   categoryId:3,
   stock: 5,
-  desciption:"Celular xiaomi, 4gb de ram, 64gb de almacenamiento, varios colores disponibles."
+  desciption:"Celular xiaomi, 4gb de ram, 64gb de almacenamiento, varios colores disponibles.",
+  categoryName: "Tecnologia"
   
 },
 {
@@ -147,7 +161,8 @@ const DataHogar=[
   price:18000,
   categoryId:3,
   stock: 5,
-  desciption:"Celular iphone 12, 8gb de ram, 264gb de almacenamiento, camara delantera 45mpx, color lila pastel."
+  desciption:"Celular iphone 12, 8gb de ram, 264gb de almacenamiento, camara delantera 45mpx, color lila pastel.",
+  categoryName: "Tecnologia"
   
 },
 {
@@ -157,7 +172,8 @@ const DataHogar=[
   price:18000,
   categoryId:3,
   stock: 5,
-  desciption:"Notebook Dell, pantalla de 16' 6gb de ram, 512gb ssd, grafica Intel Grapics."
+  desciption:"Notebook Dell, pantalla de 16' 6gb de ram, 512gb ssd, grafica Intel Grapics.",
+  categoryName: "Tecnologia"
   
 },
 {
@@ -167,7 +183,8 @@ const DataHogar=[
   price:18000,
   categoryId:3,
   stock: 5,
-  desciption:"Notebook Hp 14', 4gb de ram, 1t ssd, grafica AMD Radeon 2000 ."
+  desciption:"Notebook Hp 14', 4gb de ram, 1t ssd, grafica AMD Radeon 2000 .",
+  categoryName: "Tecnologia"
   
 },
 {
@@ -177,7 +194,8 @@ const DataHogar=[
   price:18000,
   categoryId:3,
   stock: 5,
-  desciption:"Notebook Asus rog', 17', 16gb de ram, 1t ssd, grafica RTX 3050TI, gaming ."
+  desciption:"Notebook Asus rog', 17', 16gb de ram, 1t ssd, grafica RTX 3050TI, gaming .",
+  categoryName: "Tecnologia"
   
 },
 ]
