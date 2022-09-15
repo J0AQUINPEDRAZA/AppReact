@@ -26,7 +26,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
@@ -391,15 +391,15 @@
   transition: .2s ease-in-out;
 }
 
-.categoryName{
-    font-size: 25px;
-    color: #10203f;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    text-shadow: 1px 1px 5px #1d4173;
-  }
-  
-.btnCartWidget{
+.categoryName {
+  font-size: 25px;
+  color: #10203f;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  text-shadow: 1px 1px 5px #1d4173;
+}
+
+.btnCartWidget {
   text-decoration: none;
 }
 
@@ -430,4 +430,93 @@
   color: #1d4173;
   border: 1px solid #1d4173;
   cursor: default;
+}
+
+.itemCardCart {
+  display: flex;
+  width: 250px;
+  min-height: 266px;
+  max-height: 293px;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartBox {
+  border: 2px solid #436ba2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.cardCartContainer {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+}
+
+.btnCartClear{
+  width: 100px;
+  background: transparent;
+  border: 2px solid #436ba2;
+  color: #436ba2;
+  border-radius: 5px;
+  padding: 4px 2px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+.btnCartClear:hover{
+  color: #10203f;
+  border: 2px solid #10203f;
+  cursor: pointer;
+}
+
+.btnItemClear{
+  width: 80px;
+  height: auto;
+  background: transparent;
+  border: 2px solid #436ba2;
+  color: #436ba2;
+  border-radius: 5px;
+  padding: 4px 2px;
+}
+
+.btnItemClear:hover{
+  color: #10203f;
+  border: 2px solid #10203f;
+  cursor: pointer;
+}
+
+.btnItemBuy{
+  width: 80px;
+  background: transparent;
+  border: 2px solid #436ba2;
+  color: #436ba2;
+  border-radius: 5px;
+  padding: 4px 2px;
+}
+.btnItemBuy:hover{
+  color: #10203f;
+  border: 2px solid #10203f;
+  cursor: pointer;
+}
+
+.btnsItemContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 122px;
+  align-items: center;
+  justify-content: space-around;
 }

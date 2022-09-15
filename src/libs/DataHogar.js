@@ -61,7 +61,7 @@ const DataHogar=[
   image: "https://i.ibb.co/2yDNqYZ/zapatilla2.jpg",
   price:18000,
   categoryId:1,
-  stock: 5,
+  stock: 3,
   desciption:"Zapatilla New balance, deportiva - casual, suela de goma amortiguante.",
   categoryName: "Moda"
   
@@ -70,9 +70,9 @@ const DataHogar=[
   id: 7,
   tag:"Equipo de mate stanley",
   image: "https://i.ibb.co/KwjpfnJ/mate.jpg",
-  price:18000,
+  price:15000,
   categoryId:2,
-  stock: 5,
+  stock: 10,
   desciption:"Set matero Stanley, completo, con todos sus accesorios, mate, yerbera, termo, y porta set.",
   categoryName: "Hogar"
   
@@ -81,9 +81,9 @@ const DataHogar=[
   id: 8,
   tag:"Mesa ratona",
   image: "https://i.ibb.co/b2Nr6N7/mesa.jpg",
-  price:18000,
+  price:12000,
   categoryId:2,
-  stock: 5,
+  stock: 1,
   desciption:"Mesa ratona nordica, doble material, madera y vidrio, liviana y super contemporanea.",
   categoryName: "Hogar"
   
@@ -92,9 +92,9 @@ const DataHogar=[
   id: 9,
   tag:"Pava electrica",
   image: "https://i.ibb.co/sJmxCwM/pava.jpg",
-  price:18000,
+  price:7000,
   categoryId:2,
-  stock: 5,
+  stock: 15,
   desciption:"Pava electrica Peabody, negra, 1.5lts, modo mate!.",
   categoryName: "Hogar"
   
@@ -103,9 +103,9 @@ const DataHogar=[
   id: 10,
   tag:"Silla nordica",
   image: "https://i.ibb.co/WNrXLW5/silla1.jpg",
-  price:18000,
+  price:5000,
   categoryId:2,
-  stock: 5,
+  stock: 7,
   desciption:"Silla nordica para elhogar, cocina, escritorio, asiento simil cuero.",
   categoryName: "Hogar"
   
@@ -114,9 +114,9 @@ const DataHogar=[
   id: 11,
   tag:"Silla nordica oficina",
   image: "https://i.ibb.co/ggfG1Pw/silla2.jpg",
-  price:18000,
+  price:6000,
   categoryId:2,
-  stock: 5,
+  stock: 8,
   desciption:"Silla nordica de oficina, comoda, hergonomica, asiento de pana.",
   categoryName: "Hogar"
   
@@ -125,9 +125,9 @@ const DataHogar=[
   id: 12,
   tag:"Tostadora doble",
   image: "https://i.ibb.co/xq9Rkdj/tostadora.jpg",
-  price:18000,
+  price:4500,
   categoryId:2,
-  stock: 5,
+  stock: 4,
   desciption:"Tostadora atma, doble, 180w, 220v, color silver, con timer.",
   categoryName: "Hogar"
   
@@ -136,9 +136,9 @@ const DataHogar=[
   id: 13,
   tag:"Celular samsung",
   image: "https://i.ibb.co/sVq8N7B/celular1.jpg",
-  price:18000,
+  price:60000,
   categoryId:3,
-  stock: 5,
+  stock: 2,
   desciption:"Celular samsung, 6gb de ram, 128gb de almacenamiento, varios colores disponibles.",
   categoryName: "Tecnologia"
   
@@ -147,9 +147,9 @@ const DataHogar=[
   id: 14,
   tag:"Celular xiaomi",
   image: "https://i.ibb.co/nRx28rM/celular2.jpg",
-  price:18000,
+  price:40000,
   categoryId:3,
-  stock: 5,
+  stock: 9,
   desciption:"Celular xiaomi, 4gb de ram, 64gb de almacenamiento, varios colores disponibles.",
   categoryName: "Tecnologia"
   
@@ -158,9 +158,9 @@ const DataHogar=[
   id: 15,
   tag:"Celular iphone 12",
   image: "https://i.ibb.co/6bLfdx6/celular3.jpg",
-  price:18000,
+  price:120000,
   categoryId:3,
-  stock: 5,
+  stock: 12,
   desciption:"Celular iphone 12, 8gb de ram, 264gb de almacenamiento, camara delantera 45mpx, color lila pastel.",
   categoryName: "Tecnologia"
   
@@ -169,7 +169,7 @@ const DataHogar=[
   id: 16,
   tag:"Notebook Dell",
   image: "https://i.ibb.co/PZzrKQJ/compu1.jpg",
-  price:18000,
+  price:80000,
   categoryId:3,
   stock: 5,
   desciption:"Notebook Dell, pantalla de 16' 6gb de ram, 512gb ssd, grafica Intel Grapics.",
@@ -180,9 +180,9 @@ const DataHogar=[
   id: 17,
   tag:"Notebook Hp 15'",
   image: "https://i.ibb.co/PxH2mHT/compu2.jpg",
-  price:18000,
+  price:60000,
   categoryId:3,
-  stock: 5,
+  stock: 7,
   desciption:"Notebook Hp 14', 4gb de ram, 1t ssd, grafica AMD Radeon 2000 .",
   categoryName: "Tecnologia"
   
@@ -191,9 +191,9 @@ const DataHogar=[
   id: 18,
   tag:"Notebook Asus rog",
   image: "https://i.ibb.co/wRYJdcn/compu3.jpg",
-  price:18000,
+  price:200000,
   categoryId:3,
-  stock: 5,
+  stock: 2,
   desciption:"Notebook Asus rog', 17', 16gb de ram, 1t ssd, grafica RTX 3050TI, gaming .",
   categoryName: "Tecnologia"
   

@@ -1,20 +1,24 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
 import ItemConunt from "./ItemCount";
 function ItemDetail({ item }) {
-    const initialQty = 0;
-    const [qty, setQty] = useState(initialQty);
-    const qtyHandlerPlus = () => {
-        qty < item.stock ? setQty(qty + 1) : setQty(qty)
+    const test = useContext(CartContext)
+    const initialCount = 0;
+    const [count, setCount] = useState(initialCount);
+    const countHandlerPlus = () => {
+        count < item.stock ? setCount(count + 1) : setCount(count)
     }
-    const qtyHandlerMinus = () => {
-        qty > 1 ? setQty(qty - 1) : setQty(qty)
+    const countHandlerMinus = () => {
+        count > 1 ? setCount(count - 1) : setCount(count)
     }
-    let [cart, setCart] = useState(0)
+    let [qty, setQty] = useState(0)
     const onAdd = () => {
-        cart < item.stock ? cart = cart + qty : setCart(0)
-        cart === 1 ? console.log(`Se agrego ${cart} objeto al carrito`) : console.log(`Se agregaron ${cart} objetos al carrito`)
-        setCart(cart)
+        qty < item.stock ? qty = qty + count : setQty(0)
+        qty === 1 ? console.log(`Se agrego ${qty} objeto al carrito`) : console.log(`Se agregaron ${qty} objetos al carrito`)
+        setQty(qty)
+        test.addItem(item, qty)
+        
     }
     return (
         <>{item.price > 0
@@ -26,10 +30,10 @@ function ItemDetail({ item }) {
                 <div className="itemDetailcard">
                     <p className="itemDetailDescription">{item.desciption}</p>
                     {
-                        cart < 1
+                        qty < 1
                             ? <><p className="itemDetailPrice">${item.price}</p>
-                                <ItemConunt stock={item.stock} item={item} initial={initialQty} onAdd={onAdd} cart={cart} qty={qty} qtyHandlerMinus={qtyHandlerMinus} qtyHandlerPlus={qtyHandlerPlus} /></>
-                            : <Link to='/cart' className="btnAddToCart"><p className="btnGoToCart">Go to cart</p></Link>
+                                <ItemConunt stock={item.stock} item={item} initial={initialCount} onAdd={onAdd} count={count} countHandlerMinus={countHandlerMinus} countHandlerPlus={countHandlerPlus} /></>
+                            : <Link to='/cart' className="btnAddToCart" ><p className="btnGoToCart">Go to cart</p></Link>
                     }
                 </div>
             </div>
