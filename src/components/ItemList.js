@@ -12,7 +12,7 @@ function ItemList({ item }) {
                 <Item item={item} />
                 <Link to={`item/${item.id}`} className="btnDetalle"><p>Detalle</p></Link>
             </div>)
-            : <p>cargando...</p> 
+            : <span className="spinner"></span> 
         }</>
     )
 

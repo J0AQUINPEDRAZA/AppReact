@@ -1,5 +1,3 @@
-
-
 function ItemConunt({ item, initial, onAdd, countHandlerMinus, countHandlerPlus, qty, count}) {
     return (
         <div className="itemCountContainer">

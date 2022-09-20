@@ -15,13 +15,13 @@ function ItemDetail({ item }) {
     let [qty, setQty] = useState(0)
     const onAdd = () => {
         qty < item.stock ? qty = qty + count : setQty(0)
-        qty === 1 ? console.log(`Se agrego ${qty} objeto al carrito`) : console.log(`Se agregaron ${qty} objetos al carrito`)
         setQty(qty)
         test.addItem(item, qty)
         
+        
     }
     return (
-        <>{item.price > 0
+        <>{item.price
             ? <div className="itemDetailBox">
                 <div className="cardDetail">
                     <img src={item.image} className="itemDetailImg" alt="" />
@@ -37,7 +37,7 @@ function ItemDetail({ item }) {
                     }
                 </div>
             </div>
-            : <p>cargando...</p>
+            : <span className="spinner"></span> 
         }</>
     )
 }
