@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "./CartContext";
+import { CartContext } from "../context/CartContext";
+
 import ItemConunt from "./ItemCount";
 function ItemDetail({ item }) {
     const test = useContext(CartContext)
@@ -21,14 +22,14 @@ function ItemDetail({ item }) {
         
     }
     return (
-        <>{item.price
+        <>{item
             ? <div className="itemDetailBox">
                 <div className="cardDetail">
                     <img src={item.image} className="itemDetailImg" alt="" />
-                    <p className="itemDetailTag">{item.tag}</p>
+                    <p className="itemDetailTag">{item.name}</p>
                 </div>
                 <div className="itemDetailcard">
-                    <p className="itemDetailDescription">{item.desciption}</p>
+                    <p className="itemDetailDescription">{item.description}</p>
                     {
                         qty < 1
                             ? <><p className="itemDetailPrice">${item.price}</p>

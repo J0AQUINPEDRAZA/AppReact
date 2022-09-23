@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function ItemList({ item }) {
     
     return (
-        <>{ item.length > 0
+        <>{ item
             ? item.map(item=>
             <div className="itemContainer" key={item.id} >
                 <Item item={item} />

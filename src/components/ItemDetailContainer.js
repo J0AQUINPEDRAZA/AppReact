@@ -1,21 +1,23 @@
 import ItemDetail from "./ItemDetail";
-import Task from "../utils/Task";
 import React, { useEffect } from 'react';
 import { useState } from "react";
-import DataHogar from "../libs/DataHogar";
 import { useParams } from "react-router-dom";
+import { db } from '../utils/firebaseConfig';
+import { doc, getDoc } from "firebase/firestore";
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState({});
+    const [datos, setDatos] = useState({});
     const { id } = useParams();
     useEffect(() => {
-        Task(DataHogar.find(item => item.id === parseInt(id)))
-            .then(res => setProduct(res))
-            .catch(err => console.log(err))
-
+        const q = doc(db, 'products', id);
+        getDoc(q)
+            .then(res => setDatos({
+                id: res.id,
+                ...res.data()
+            }))
     }, [id])
     return (
         <>{<main className='App-Main'>
-            <ItemDetail item={product} />
+            <ItemDetail item={datos} />
         </main>
         }</>
     )

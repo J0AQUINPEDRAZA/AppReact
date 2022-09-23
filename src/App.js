@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './components/Cart';
-import CartContextProvider from './components/CartContext';
+import CartContextProvider from './context/CartContext';
 function App() {
   return (
     <div className="App">

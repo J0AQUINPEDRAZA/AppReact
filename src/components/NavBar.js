@@ -7,9 +7,9 @@ function NavBar() {
         <Link to='/'><img src="https://i.ibb.co/pWq8fhk/logo192.png" className="logo" alt="logo" /></Link>
         <Link to='/' className='titulo'><h1>React Shop App</h1></Link>
         <div className='btnsCategoriasContainer'>
-          <Link to={'/category/3'} className='btnCategorias'><p>Tecnologia</p></Link>
-          <Link to={'/category/2'} className='btnCategorias'><p>Hogar</p></Link>
-          <Link to={'/category/1'} className='btnCategorias'><p>Moda</p></Link>
+          <Link to={'/category/tecnologia'} className='btnCategorias'><p>Tecnologia</p></Link>
+          <Link to={'/category/hogar'} className='btnCategorias'><p>Hogar</p></Link>
+          <Link to={'/category/moda'} className='btnCategorias'><p>Moda</p></Link>
         </div>
         <Link to='/cart' className='btnCartWidget'><CartWidget /></Link>
       </nav>
