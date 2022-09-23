@@ -22,7 +22,7 @@ function ItemDetail({ item }) {
         
     }
     return (
-        <>{item
+        <>{item.price > 0
             ? <div className="itemDetailBox">
                 <div className="cardDetail">
                     <img src={item.image} className="itemDetailImg" alt="" />

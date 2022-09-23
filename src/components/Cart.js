@@ -1,13 +1,56 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
-
-
+import { collection, doc, increment, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
+import { db } from '../utils/firebaseConfig';
 const Cart = () => {
     const test = useContext(CartContext)
     const clearCart = () => {
         test.cartClear()
     }
+    const createOrder = () => {
+        let usuarioName = 'joaquin'
+        let usuarioEmail = 'joaquin@gmail'
+        let usuarioPhone = '3535678901'
+        let itemsByOrder = test.items.map(item => ({
+            id: item.id,
+            title: item.name,
+            price: item.price,
+            qty: item.qty
+        }))
+        let order = {
+            orderShop: {
+                buyer: {
+                    name: `${usuarioName}`,
+                    email: `${usuarioEmail}`,
+                    phone: `${usuarioPhone}`
+                },
+                date: serverTimestamp(),
+                items: itemsByOrder,
+                total: test.totalS
+            }
+        }
+        const createOrderOnDb = async () => {
+            const newOrderRef = doc(collection(db, 'orders'))
+            await setDoc(newOrderRef, order)
+            return newOrderRef
+        }
+        createOrderOnDb()
+            .then(res =>{ 
+                test.items.forEach(async (item) => {
+                    const itemRef = doc(db, "products", item.id);
+                    await updateDoc(itemRef, {
+                        stock: increment(-item.qty)
+                    });
+                });
+                alert(`Tu id de compra es: ID:${res.id}`)
+                clearCart()
+                })
+            .catch(err => console.log(err))
+        
+    }
+
+
     return (
         <>
             <main className='App-Main'>
@@ -19,7 +62,7 @@ const Cart = () => {
                                 <div className="cartBox" key={item.id}>
                                     <div className="itemCardCart" >
                                         <img src={item.image} className="itemImg" alt="" />
-                                        <p className="itemTitle">{item.tag}</p>
+                                        <p className="itemTitle">{item.name}</p>
                                         <p className="itemPrice">${item.price} por unidad</p>
                                         <span className="stockText">{item.qty > 1 ? `${item.qty} Unidades` : `${item.qty} Unidad`}</span>
                                     </div>
@@ -33,7 +76,7 @@ const Cart = () => {
                                 </div>
                             )}<div className="totalBox">
                                 <p className="totalText">Total: ${test.totalS}</p>
-                                <button className='btnItemBuy'>Comprar</button>
+                                <button className='btnItemBuy' onClick={createOrder}>Comprar</button>
                             </div>
                         </> : <div>
                             <h1 className="tituloCart">No hay productos en el carrito</h1>

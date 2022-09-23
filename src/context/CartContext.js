@@ -29,7 +29,7 @@ const CartContextProvider = ({ children }) => {
                 return prod
             }))
             :
-            setItems([...items, {id: item.id, tag: item.tag , image: item.image, price: item.price, qty: qty }])
+            setItems([...items, {id: item.id, name: item.name , image: item.image, price: item.price, qty: qty }])
     }
 
 
