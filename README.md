@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# React Shop App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es un e-comerce desarrollado integramente en react.js, el cual consta de la tienda/home una seccion de detalle del producto y la zona del carrito en la cual se puede efectuar la compra y el posterior guardado o la impresion del ticket o resumen de la compra antes realizada
+El mismo utiliza una base de datos desarrollada en firebase, la cual contiene todos los productos con sus respectivas caracteristicas y las ordenes de compras realizadas por los usuarios
 
-## Available Scripts
+## Comenzando 🚀
 
-In the project directory, you can run:
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-### `npm start`
+Debes encontrarte en tu consola y realizar una clonacion del proyecto con el sigueinte comando:
+$ git clone https://github.com/J0AQUINPEDRAZA/AppReact.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Pre-requisitos 📋
 
-### `npm test`
+_Que cosas necesitas para instalar el software y como instalarlas_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Da un ejemplo
+```
 
-### `npm run build`
+### Instalación 🔧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deberas tener instalado Node en tu computadora al igual que Npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+luego en la consola, sobre la carpoeta del proyecto deberas inicializarlo mediante Npm Start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Despliegue 📦
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Con el comando npm run Build podraz hacer deploy del proyecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Construido con 🛠️ React.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-## Learn More
+* React.js
+* JavaScript
+* Node.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuyendo 🖇️
 
-### Code Splitting
+puedes encontrar mas proyectos commo este en mi pagina : https://github.com/J0AQUINPEDRAZA
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Autores ✒️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Joaquin Pedraza - Programador Front End = https://github.com/J0AQUINPEDRAZA
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licencia 📄
 
-### Advanced Configuration
+Este proyecto está bajo la Licencia (J0AQUINPEDRAZA) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎁
 
-### Deployment
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Te invito a seguirme en mi Linkedin 🤓.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

@@ -18,8 +18,8 @@ function ItemDetail({ item }) {
         qty < item.stock ? qty = qty + count : setQty(0)
         setQty(qty)
         test.addItem(item, qty)
-        
-        
+
+
     }
     return (
         <>{item.price > 0
@@ -34,11 +34,14 @@ function ItemDetail({ item }) {
                         qty < 1
                             ? <><p className="itemDetailPrice">${item.price}</p>
                                 <ItemConunt stock={item.stock} item={item} initial={initialCount} onAdd={onAdd} count={count} countHandlerMinus={countHandlerMinus} countHandlerPlus={countHandlerPlus} /></>
-                            : <Link to='/cart' className="btnAddToCart" ><p className="btnGoToCart">Go to cart</p></Link>
+                            : <>
+                                <Link to='/' className="link" ><p className="btnGoToCart">Seguir Comprando</p></Link>
+                                <Link to='/cart' className="link" ><p className="btnGoToCart">I ir al carrito</p></Link>
+                            </>
                     }
                 </div>
             </div>
-            : <span className="spinner"></span> 
+            : <span className="spinner"></span>
         }</>
     )
 }

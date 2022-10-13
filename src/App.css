@@ -404,9 +404,10 @@
 }
 
 .btnGoToCart {
+  display: flex;
   text-decoration: none;
   width: 120px;
-  height: 30px;
+  height: 50px;
   padding: 3px 6px;
   outline: none;
   border-radius: 5px;
@@ -414,11 +415,13 @@
   background: transparent;
   color: #80aded;
   border: 1px solid #80aded;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnGoToCart:hover {
-  color: #93b9ed;
-  border: 1px solid #93b9ed;
+  color: #436ba2;
+  border: 1px solid #436ba2;
 }
 
 .btnGoToCart:active {
@@ -456,13 +459,25 @@
   align-self: flex-start;
 }
 
+.cartTicketBox {
+  border: 2px solid #436ba2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+  align-self: flex-start;
+  align-items: center;
+}
+
 .cardCartContainer {
   display: flex;
-    width: 95%;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+  width: 95%;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnCartClear {
@@ -499,7 +514,8 @@
 }
 
 .btnItemBuy {
-  width: 80px;
+  width: 135px;
+  height: 35px;
   background: transparent;
   border: 2px solid #436ba2;
   color: #436ba2;
@@ -510,6 +526,12 @@
 .btnItemBuy:hover {
   color: #10203f;
   border: 2px solid #10203f;
+  cursor: pointer;
+}
+
+.btnItemBuy:disabled {
+  color: #090b0e;
+  border: 2px solid #090b0e;
   cursor: pointer;
 }
 
@@ -525,7 +547,9 @@
 .hiperVinculo {
   align-self: end;
 }
-
+.link{
+text-decoration:  none;
+}
 .numberCartDisabled {
   display: flex;
   justify-content: center;
@@ -631,3 +655,18 @@
   border-radius: 5px;
 }
 
+.ticketContainer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 55%;
+  left: 60%;
+  width: 250px;
+  display: flex;
+  border: 2px solid #436ba2;
+  border-radius: 7px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 270px;
+}
