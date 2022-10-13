@@ -547,9 +547,11 @@
 .hiperVinculo {
   align-self: end;
 }
-.link{
-text-decoration:  none;
+
+.link {
+  text-decoration: none;
 }
+
 .numberCartDisabled {
   display: flex;
   justify-content: center;
@@ -655,7 +657,7 @@ text-decoration:  none;
   border-radius: 5px;
 }
 
-.ticketContainer{
+.ticketContainer {
   padding-top: 10px;
   padding-bottom: 10px;
   position: fixed;
@@ -669,4 +671,26 @@ text-decoration:  none;
   align-items: center;
   justify-content: space-around;
   height: 270px;
+}
+
+.footer {
+  top: 20px;
+  align-self: flex-end;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #10203f;
+  box-shadow: 0px 2px 6px #436ba2;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerText {
+  color: #fff;
+}
+
+.fa-github{
+  font-size: 20px;
 }
